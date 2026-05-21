@@ -73,7 +73,7 @@ app.post("/send-bulk", async (req, res) => {
         });
       }
 
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      await new Promise(resolve => setTimeout(resolve, 300));
     }
 
     res.json(results);
